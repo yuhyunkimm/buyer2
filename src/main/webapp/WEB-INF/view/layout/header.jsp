@@ -37,7 +37,8 @@
                 display: flex;
                 justify-content: center;
             }
-            .write{
+
+            .write {
                 display: flex;
                 justify-content: center;
             }

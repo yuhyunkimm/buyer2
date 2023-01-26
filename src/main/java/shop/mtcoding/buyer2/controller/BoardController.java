@@ -25,13 +25,6 @@ public class BoardController {
     @Autowired
     private BoardRepository boardRepository;
 
-    @GetMapping("/")
-    public String home(Model model) {
-        List<Board> boardList = boardRepository.findAll();
-        model.addAttribute("boardList", boardList);
-        return "board/list";
-    }
-
     @GetMapping("/board")
     public String writeList(Model model) {
         User principal = (User) session.getAttribute("principal");
