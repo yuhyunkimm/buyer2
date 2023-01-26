@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="shop.mtcoding.buyer2.model.BoardRepository">
+
+    <insert id="insert">
+        insert into Board_tb(title, userId, created_at) values(#{title}, #{userId}, now());
+    </insert>
+
+    <select id="findById" resultType="shop.mtcoding.buyer2.model.Board">
+        select * from Board_tb where id = #{id}
+    </select>
+
+    <select id="findByUserId" resultType="shop.mtcoding.buyer2.model.Board">
+        select * from Board_tb where userId = #{userId}
+    </select>
+
+    <select id="findAll" resultType="shop.mtcoding.buyer2.model.Board">
+        select * from Board_tb
+    </select>
+
+
+    <update id="updateById">
+        update Board_tb
+        set title = #{title},
+        userId = #{userId},
+        qty = #{qty}
+        where id = #{id}
+    </update>
+
+
+</mapper>
