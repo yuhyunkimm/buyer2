@@ -6,7 +6,7 @@
         <div class="linkbox">
             <a href="/loginForm">로그인</a>&nbsp
             <a href="/joinForm">회원가입</a>
-        </div>
+        </div><br>
                 <form action="/login" method="post">
         <div class="box">
             <table border="1">

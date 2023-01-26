@@ -5,9 +5,9 @@
         <h1>게시글 목록 페이지</h1>
         <hr />
         <div class="linkbox">
-            <a href="/updateForm">회원정보</a>&nbsp
+            <a href="/updateForm/${principal.id}">회원정보</a>&nbsp
             <a href="/logout">로그아웃</a>
-        </div>
+        </div><br>
         <div class="box">
             <table border=1>
                 <tr>
